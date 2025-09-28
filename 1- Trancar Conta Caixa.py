@@ -78,7 +78,7 @@ def primeira_vez():
     valores_vistos.add(coligada)
 
 # Função para dar continuidade ao processo de automação sem precisar repetir os primeiros passos que ocorrem na primeira vez
-def nem_nem():
+def nem_primeira_nem_ultima():
     pc.copy(conta_caixa) # copiar conta caixa
 
     x, y, largura, altura = encontrar_imagem('9-Filtro ContaCaixa.png', 0.7)
@@ -116,13 +116,13 @@ for i, coligada in enumerate(df['Coligada']):
     # Verificando se é a última vez entrando na coligada
     elif ocorrencias_coligada[coligada] == 1: 
         print(f'Última vez entrando na coligada {coligada}, conta caixa: {conta_caixa}')
-        nem_nem()
+        nem_primeira_nem_ultima()
         sleep(1)
         pg.hotkey('ctrl','w')
 
     else:   
         print(f'Nem primeira nem ultima vez entrando na coligada: {coligada}, conta caixa: {conta_caixa}')
-        nem_nem()
+        nem_primeira_nem_ultima()
         
     ocorrencias_coligada[coligada] -= 1
 
