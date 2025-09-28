@@ -19,7 +19,7 @@ _____________________________________________________________________________
 Funções principais:
 - *`encontrar_imagem()`* ->  Aguarda até que a imagem desejada apareça na tela com uma certa confiança, retornando suas coordenadas.
 - *`primeira_vez()`* ->  Executa os cliques e inserções necessários ao acessar uma coligada pela primeira vez.
-- *`nem_nem()`* ->  Processo reduzido para coligadas que já foram acessadas anteriormente.
+- *`nem_primeira_nem_ultima()`* ->  Processo reduzido para coligadas que já foram acessadas anteriormente.
 _____________________________________________________________________________
 Tecnologias utilizadas:
 - `pyautogui` – automação de mouse e teclado
